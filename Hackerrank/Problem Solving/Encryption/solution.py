@@ -30,17 +30,13 @@ def encryption(s):
         encript.append(encript_row)    
     elif(encript[len(encript)-1]) != encript_row and len(encript_row) != 0:
         encript.append(encript_row)
-        
-    print(encript)
-    print(c_length_root)
+  
     s_encript = ""
     
     col_encript = []
     
     for j in range(c_length_root):
         for i in range(len(encript)):
-                print(encript[i])
-                print(len(encript[i]))
                 if  j >= len(encript[i]):
                     continue
                 s_encript += encript[i][j]
